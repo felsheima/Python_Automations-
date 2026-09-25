@@ -3,10 +3,10 @@ import re
 
 class PasswordAnalyzer:
     def __init__(self, password):
-        self.password = password 
+        self.password = password
 
     def analyze(self):
-        strong_length = len(self.password) > 12        
+        strong_length = len(self.password) >= 12        
         uses_lowercase =  bool(re.search(r"[a-z]", self.password))
         uses_uppercase = bool(re.search(r"[A-Z]", self.password))
         uses_number = bool(re.search(r"[0-9]", self.password))
@@ -35,15 +35,30 @@ class PasswordAnalyzer:
             print("Special character = Weak")
 
         #Determine overall strength
-        overall_strength = strong_length and uses_lowercase and uses_uppercase and uses_number and uses_special_char 
+        overall_strength = strong_length and uses_lowercase and uses_uppercase and uses_number and uses_special_char
 
-        #Print the report
+        # Print the report
         print("\nPASSWORD SECURITY REPORT")
         print("------------------------")
-        print(strong_length)
-        print(uses_lowercase)
-        print(uses_uppercase)
-        print(uses_number)
-        print(uses_special_char)
-        print(overall_strength)
+        print("Length:", strong_length)
+        print("Lowercase:", uses_lowercase)
+        print("Uppercase:", uses_uppercase)
+        print("Number:", uses_number)
+        print("Special character:", uses_special_char)
+
+        if overall_strength == True:
+            print("Password analyzer has concluded this password to be efficient!")
+        else:
+            print("Password analyzer has concluded this password to be inefficient!") 
+
         
+if __name__ == "__main__":
+    length = int(input("How long would you like your password to be? :"))
+
+    generator = PasswordGenerator(length)
+    password = generator.generate()
+
+    print("The password your generator created is:", password)
+
+    analyzer = PasswordAnalyzer(password)
+    analyzer.analyze()
