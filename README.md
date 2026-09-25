@@ -98,6 +98,12 @@ The program uses Python's `random` module to randomly select characters to build
 * Python imports
 * Building a value one character at a time 
 
+### 4. Password Analyzer
+
+**file:** `password_analyzer.py`
+
+This program generates a report to analyze whether or not the password generator password is sufficient enough.
+
 ## How to Run
 
 Make sure Python is installed on your computer.
