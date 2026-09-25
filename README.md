@@ -71,6 +71,33 @@ This program helped me practice:
 * The `re` Python module
 * Returning `True` and `False`
 
+### 3. Password Generator
+
+**file:** 'password_generator.py'
+
+This program generates a random password based on the length selected by the user.
+
+The generator uses a combination of:
+
+* Lowercase letters
+* Uppercase letters
+* Numbers
+* Special Characters
+
+The program uses Python's 'random' module to randomly select characters to build a stronger password.
+
+# Concepts practiced:
+
+* User input
+* Variables
+* Strings
+* String concatenation
+* for loops
+* range()
+* random.choice()
+* Python imports
+* Building a value one character at a time 
+
 ## How to Run
 
 Make sure Python is installed on your computer.
