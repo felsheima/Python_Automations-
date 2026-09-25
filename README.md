@@ -73,7 +73,7 @@ This program helped me practice:
 
 ### 3. Password Generator
 
-**file:** 'password_generator.py'
+**file:** `password_generator.py`
 
 This program generates a random password based on the length selected by the user.
 
@@ -92,9 +92,9 @@ The program uses Python's 'random' module to randomly select characters to build
 * Variables
 * Strings
 * String concatenation
-* for loops
-* range()
-* random.choice()
+* `for` loops
+* `range()`
+* `random.choice()`
 * Python imports
 * Building a value one character at a time 
 
