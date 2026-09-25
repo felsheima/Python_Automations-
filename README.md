@@ -1,5 +1,5 @@
 # Python Automations
-
+11;rgb:3030/0a0a/2424
 A collection of small Python programs I am creating while learning how to automate tasks with Python.
 
 The goal of this repository is to practice Python fundamentals and gradually build more useful automation programs as I learn new concepts.
@@ -84,7 +84,7 @@ The generator uses a combination of:
 * Numbers
 * Special Characters
 
-The program uses Python's 'random' module to randomly select characters to build a stronger password.
+The program uses Python's `random` module to randomly select characters to build a stronger password.
 
 # Concepts practiced:
 
